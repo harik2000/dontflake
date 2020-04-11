@@ -5,6 +5,8 @@ import NotFound from "./containers/NotFound";
 import Login from "./containers/Login";
 import Signup from "./containers/Signup";
 import Settings from "./containers/Settings";
+import Events from "./containers/Events";
+
 import AuthenticatedRoute from "./components/AuthenticatedRoute";
 import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
 
@@ -24,6 +26,9 @@ export default function Routes() {
 <AuthenticatedRoute exact path="/settings">
   <Settings />
 </AuthenticatedRoute>
+    <AuthenticatedRoute exact path="/events">
+    <Events />
+    </AuthenticatedRoute>
 
       <NotFound />
     </Switch>

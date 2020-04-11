@@ -7,6 +7,7 @@ import Routes from "./Routes";
 import { AppContext } from "./libs/contextLib";
 import { Auth } from "aws-amplify";
 import { onError } from "./libs/errorLib";
+import config from "./config";
 
 
 function App() {
@@ -30,13 +31,15 @@ function App() {
   
     setIsAuthenticating(false);
   }
-
+  
+  
   async function handleLogout() {
     await Auth.signOut();
   
     userHasAuthenticated(false);
     history.push("/login");
   }
+  
   return (
     !isAuthenticating && (
       <div className="App container">

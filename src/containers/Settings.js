@@ -35,7 +35,7 @@ export default function Settings() {
       });
   
       alert("Your card information has been saved securely!");
-      history.push("/");
+      history.push("/events");
     } catch (e) {
       onError(e);
       setIsLoading(false);

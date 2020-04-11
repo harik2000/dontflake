@@ -3,6 +3,8 @@ import { Auth } from "aws-amplify";
 import { useHistory } from "react-router-dom";
 import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
+import FacebookButton from "../components/FacebookButton";
+
 import { useAppContext } from "../libs/contextLib";
 import { useFormFields } from "../libs/hooksLib";
 import { onError } from "../libs/errorLib";
@@ -15,6 +17,9 @@ export default function Login() {
     email: "",
     password: ""
   });
+//   handleFbLogin = () => {
+//     this.props.userHasAuthenticated(true);
+//   };
 
   function validateForm() {
     return fields.email.length > 0 && fields.password.length > 0;
@@ -33,10 +38,12 @@ export default function Login() {
       setIsLoading(false);
     }
   }
+  
 
   return (
     <div className="Login">
       <form onSubmit={handleSubmit}>
+        
         <FormGroup controlId="email" bsSize="large">
           <ControlLabel>Email</ControlLabel>
           <FormControl
