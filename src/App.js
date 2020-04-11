@@ -46,7 +46,7 @@ function App() {
         <Navbar fluid collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <Link to="/">Don't Flake</Link>
+              <Link to="/">DontFlake</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -54,6 +54,9 @@ function App() {
             <Nav pullRight>
               {isAuthenticated ? (
                 <>
+                 <LinkContainer to="/events">
+                    <NavItem>Create Event</NavItem>
+                  </LinkContainer>
                   <LinkContainer to="/settings">
                     <NavItem>Settings</NavItem>
                   </LinkContainer>
@@ -61,11 +64,12 @@ function App() {
                 </>
               ) : (
                 <>
-                  <LinkContainer to="/signup">
-                    <NavItem>Signup</NavItem>
-                  </LinkContainer>
+                 
                   <LinkContainer to="/login">
                     <NavItem>Login</NavItem>
+                  </LinkContainer>
+                  <LinkContainer to="/signup">
+                    <NavItem>Signup</NavItem>
                   </LinkContainer>
                 </>
               )}
