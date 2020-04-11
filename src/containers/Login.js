@@ -9,6 +9,8 @@ import { useAppContext } from "../libs/contextLib";
 import { useFormFields } from "../libs/hooksLib";
 import { onError } from "../libs/errorLib";
 import "./Login.css";
+import axios from "axios";
+
 
 export default function Login() {
   const { userHasAuthenticated } = useAppContext();
@@ -24,6 +26,16 @@ export default function Login() {
 
   async function handleSubmit(event) {
     event.preventDefault();
+
+    axios.post('http://c320fb9d.ngrok.io/user/create', {
+      username: fields.email
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 
     setIsLoading(true);
 
