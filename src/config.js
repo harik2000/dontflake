@@ -1,4 +1,5 @@
 export default {
+    STRIPE_KEY: "pk_test_lUKT9YrCHStd5IUU08Ikc5g900286ImOEl",
     cognito: {
       REGION: "us-east-2",
       USER_POOL_ID: "us-east-2_zBNpkd9LU",
