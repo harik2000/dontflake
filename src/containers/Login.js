@@ -17,9 +17,6 @@ export default function Login() {
     email: "",
     password: ""
   });
-//   handleFbLogin = () => {
-//     this.props.userHasAuthenticated(true);
-//   };
 
   function validateForm() {
     return fields.email.length > 0 && fields.password.length > 0;

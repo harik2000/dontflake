@@ -24,7 +24,7 @@ function querystring(name, url = window.location.href) {
         {!isAuthenticated ? (
           children
         ) : (
-          <Redirect to={redirect === "" || redirect === null ? "/settings" : redirect} />
+          <Redirect to={redirect === "" || redirect === null ? "/events" : redirect} />
         )}
       </Route>
     );
