@@ -44,7 +44,7 @@ function Events({ isLoading, onSubmit, ...props }) {
           />
         </FormGroup>
 
-        <FormGroup bsSize="large" controlId="name">
+        <FormGroup bsSize="large" controlId="startdate">
           <ControlLabel>Start Date</ControlLabel>
           <FormControl
             type="text"
@@ -54,7 +54,7 @@ function Events({ isLoading, onSubmit, ...props }) {
           />
         </FormGroup>
 
-        <FormGroup bsSize="large" controlId="name">
+        <FormGroup bsSize="large" controlId="starttime">
           <ControlLabel>Start Time</ControlLabel>
           <FormControl
             type="text"
@@ -64,7 +64,7 @@ function Events({ isLoading, onSubmit, ...props }) {
           />
         </FormGroup>
 
-        <FormGroup bsSize="large" controlId="name">
+        <FormGroup bsSize="large" controlId="description">
           <ControlLabel>Event Description</ControlLabel>
           <FormControl
             type="text"
@@ -74,7 +74,7 @@ function Events({ isLoading, onSubmit, ...props }) {
           />
         </FormGroup>
 
-        <FormGroup bsSize="large" controlId="name">
+        <FormGroup bsSize="large" controlId="location">
           <ControlLabel>Location</ControlLabel>
           <FormControl
             type="text"
@@ -84,7 +84,7 @@ function Events({ isLoading, onSubmit, ...props }) {
           />
         </FormGroup>
 
-        <FormGroup bsSize="large" controlId="name">
+        <FormGroup bsSize="large" controlId="flake">
           <ControlLabel>Cost to Flake</ControlLabel>
           <FormControl
             type="text"
@@ -94,7 +94,7 @@ function Events({ isLoading, onSubmit, ...props }) {
           />
         </FormGroup>
 
-        <FormGroup bsSize="large" controlId="name">
+        <FormGroup bsSize="large" controlId="friends">
           <ControlLabel>Invite Friends</ControlLabel>
           <FormControl
             type="text"
