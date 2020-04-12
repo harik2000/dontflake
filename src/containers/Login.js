@@ -27,8 +27,8 @@ export default function Login() {
   async function handleSubmit(event) {
     event.preventDefault();
 
-    axios.post('http://c320fb9d.ngrok.io/user/create', {
-      username: fields.email
+    axios.post('/user/create', {
+      'username': fields.email
     })
     .then(function (response) {
       console.log(response);
