@@ -1,13 +1,61 @@
-.Home .lander {
-    padding: 80px 0;
-    text-align: center;
+
+  .Signup_landingpage{
+    display: flex;
+    font-family: Circular Std;
+
   }
-  
-  .Home .lander h1 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
+  .header_1{
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 71px;
+    width:  55%;
+
+    color: #000000;
+    margin-left: 17.5rem;
   }
-  
-  .Home .lander p {
-    color: #999;
+  .header_text{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140.62%;
+    width:  55%;
+    margin-left: 17.5rem;
+    /* or 34px */
+
+
+    color: #000000;
+    margin-bottom: 7rem;
+  }
+  .Right_info{
+    background-color: white;
+    width: 31%;
+    height: 52%;
+    margin-top: 10rem;
+    margin-right: 20rem;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-color: #828288;
+  }
+  .new_account{
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #000000;
+    margin-top: 5rem;
+  }
+  .form_box{
+    margin-top: 3rem;
+  }
+  .sign_up{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
   }

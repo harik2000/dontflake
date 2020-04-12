@@ -13,6 +13,8 @@ import { useFormFields } from "../libs/hooksLib";
 import { onError } from "../libs/errorLib";
 import "./Signup.css";
 import { Auth } from "aws-amplify";
+import landingpage from './landingpage.png';
+
 
 export default function Home() {
   const [fields, handleFieldChange] = useFormFields({
@@ -103,44 +105,53 @@ export default function Home() {
     return (
       
       <div className="Signup_landingpage">
-        <h1>Don't Flake</h1>
-        <form onSubmit={handleSubmit}>
-          <h3>Create your first meetup!</h3>
-          <FormGroup controlId="email" bsSize="large">
-            <ControlLabel>Email</ControlLabel>
-            <FormControl
-              autoFocus
-              type="email"
-              value={fields.email}
-              onChange={handleFieldChange}
-            />
-          </FormGroup>
-          <FormGroup controlId="password" bsSize="large">
-            <ControlLabel>Password</ControlLabel>
-            <FormControl
-              type="password"
-              value={fields.password}
-              onChange={handleFieldChange}
-            />
-          </FormGroup>
-          <FormGroup controlId="confirmPassword" bsSize="large">
-            <ControlLabel>Confirm Password</ControlLabel>
-            <FormControl
-              type="password"
-              onChange={handleFieldChange}
-              value={fields.confirmPassword}
-            />
-          </FormGroup>
-          <LoaderButton
-            block
-            type="submit"
-            bsSize="large"
-            isLoading={isLoading}
-            disabled={!validateForm()}
-          >
-            Signup
-          </LoaderButton>
-        </form>
+
+        <div className="Left_info"> 
+          <h1 className="header_1">Everyone hates flakes. Don't be one.</h1>
+          <p className="header_text">keep your friends accountable for your plans by making them pay 🤑 when they flake.</p>
+          <img src={landingpage} alt="landingpage" className="landing_page_image" height="500"/>
+        </div>
+
+        <div className="Right_info">
+          <form onSubmit={handleSubmit}>
+            <h3 className="new_account">Create a new account</h3>
+            <FormGroup controlId="email" bsSize="large" className="form_box">
+              <ControlLabel>Email</ControlLabel>
+              <FormControl
+                autoFocus
+                type="email"
+                value={fields.email}
+                onChange={handleFieldChange}
+              />
+            </FormGroup>
+            <FormGroup controlId="password" bsSize="large">
+              <ControlLabel>Password</ControlLabel>
+              <FormControl
+                type="password"
+                value={fields.password}
+                onChange={handleFieldChange}
+              />
+            </FormGroup>
+            <FormGroup controlId="confirmPassword" bsSize="large">
+              <ControlLabel>Confirm Password</ControlLabel>
+              <FormControl
+                type="password"
+                onChange={handleFieldChange}
+                value={fields.confirmPassword}
+              />
+            </FormGroup>
+            <div className="sign_up">
+            <LoaderButton
+              block
+              type="submit"
+              bsSize="large"
+              isLoading={isLoading}
+              disabled={!validateForm()}
+            >
+              Signup
+            </LoaderButton></div>
+          </form>
+        </div>
       </div>
     );
   }

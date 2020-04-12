@@ -35,7 +35,10 @@ function BillingForm({ isLoading, onSubmit, ...props }) {
   }
 
   return (
+    <div>
     <form className="BillingForm" onSubmit={handleSubmitClick}>
+      <h1 className="credit_title">Add Credit Card</h1>
+      <div className="card_field">
       <FormGroup bsSize="large" controlId="name">
         <ControlLabel>Cardholder&apos;s name</ControlLabel>
         <FormControl
@@ -53,6 +56,7 @@ function BillingForm({ isLoading, onSubmit, ...props }) {
           base: { fontSize: "18px", fontFamily: '"Open Sans", sans-serif' }
         }}
       />
+      </div>
       <LoaderButton
         block
         type="submit"
@@ -60,9 +64,10 @@ function BillingForm({ isLoading, onSubmit, ...props }) {
         isLoading={isLoading}
         disabled={!validateForm()}
       >
-        Save Card Info
+        Continue
       </LoaderButton>
     </form>
+   </div>
   );
 }
 

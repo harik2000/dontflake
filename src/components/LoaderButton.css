@@ -7,3 +7,7 @@
   from { transform: scale(1) rotate(0deg); }
   to { transform: scale(1) rotate(360deg); }
 }
+.LoaderButton{
+  background-color: #1444A6;
+  color: white;
+}

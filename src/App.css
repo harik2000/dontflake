@@ -1,7 +1,46 @@
-.App {
-  margin-top: 15px;
-}
+
 
 .App .navbar-brand {
   font-weight: bold;
+  background-color: white;
+}
+.logo{
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  color: #1444A6;
+}
+.logo a:hover, .logo a:visited, .logo a:link, .logo a:active
+{
+    text-decoration: none;
+}
+.authentic_navbar{
+  background-color: white;
+}
+.text{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.button_css{
+  font-family: 'Circular Std';
+  align-items: center;
+  text-align: center;
+
+  color: #1444A6;
+  font-size: 24px;
+  margin-left: 5rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #1444A6;
+box-sizing: border-box;
+border-radius: 10px;
+
+}
+
+.button_css.active {
+  background-color:#1444A6 !important;
+  color: white  !important;
 }
